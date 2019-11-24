@@ -1,11 +1,11 @@
 <template>
 <div>
     <h1>{{title}}</h1>
-    <ol>
+    <ul>
         <li v-for="book in books" :key="book.title">
             {{book.title}} {{book.author}}
         </li>
-    </ol>
+    </ul>
 </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
     h1, h2 {
         font-weight: normal;
     }
-    ol {
+    ul {
         list-style-type: none;
         padding: 0;
     }
