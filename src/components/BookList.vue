@@ -30,7 +30,7 @@ export default {
     },
     methods: {
         appendBook: function(bookTitle, bookAuthor) {
-
+            this.books.push({ title: bookTitle, author: bookAuthor })
         }
     }
 }
