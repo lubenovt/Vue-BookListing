@@ -20,8 +20,7 @@ export default {
     },
     methods: {
         bookSubmit: function(bookAuthor, bookTitle) {
-            this.bookTitle = bookTitle;
-            this.bookAuthor = bookAuthor;
+            this.$emit('addBook', bookTitle, bookAuthor)
         }
     }
 }
