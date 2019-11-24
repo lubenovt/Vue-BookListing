@@ -2,7 +2,7 @@
 <div>
     <h1>{{title}}</h1>
     <ul>
-        <book-item v-for="book in books" :key="book.title"></book-item>
+        <book-item v-for="book in books" :book="book"></book-item>
     </ul>
 </div>
 </template>
@@ -12,7 +12,7 @@ import BookItem from "./BookItem";
 export default {
     name: "BookList",
     components: {
-        BookItem
+        BookItem,
     },
     data: {
         title: "All Books",
