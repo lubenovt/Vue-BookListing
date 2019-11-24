@@ -4,15 +4,19 @@
     <ul>
         <book-item v-for="book in books" :book="book"></book-item>
     </ul>
+    <book-form></book-form>
 </div>
 </template>
 
 <script>
 import BookItem from "./BookItem";
+import BookForm from "./BookForm";
+
 export default {
     name: "BookList",
     components: {
         BookItem,
+        BookForm,
     },
     data() {
         return {
